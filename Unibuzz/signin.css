@@ -1,0 +1,124 @@
+/* Reset and base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0077ff, #00d4ff);
+  }
+  
+  /* Form Container */
+  .form-container {
+    width: 380px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-box {
+    padding: 40px;
+    transition: 0.5s;
+  }
+  
+  .form-box h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #0077ff;
+  }
+  
+  .input-box {
+    position: relative;
+    margin: 30px 0;
+    border-bottom: 2px solid #ccc;
+  }
+  
+  .input-box input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .input-box label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #aaa;
+    pointer-events: none;
+    transition: 0.3s;
+  }
+  
+  .input-box i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #0077ff;
+  }
+  
+  .input-box input:focus ~ label,
+  .input-box input:valid ~ label {
+    top: -5px;
+    color: #0077ff;
+    font-size: 0.8rem;
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 12px;
+    background: #0077ff;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background: #005fcc;
+  }
+  
+  .register-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+  }
+  
+  .register-link a {
+    color: #0077ff;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .register-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Toggle between login/signup */
+  .signup {
+    display: none;
+  }
+  
+  .form-container.active .login {
+    display: none;
+  }
+  
+  .form-container.active .signup {
+    display: block;
+  }
+  

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login | Signup - UNIbuzz</title>
+  <link rel="stylesheet" href="signin.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+<div class="form-container">
+  <div class="form-box login">
+    <h2>Login</h2>
+    <form action="#">
+      <div class="input-box">
+        <i class='bx bxs-user'></i>
+        <input type="text" required>
+        <label>Username</label>
+      </div>
+      <div class="input-box">
+        <i class='bx bxs-lock-alt'></i>
+        <input type="password" required>
+        <label>Password</label>
+      </div>
+      <button type="submit" class="btn">Login</button>
+      <div class="register-link">
+        <p>Don't have an account? <a href="#" id="signup-link">Signup</a></p>
+      </div>
+    </form>
+  </div>
+
+  <div class="form-box signup">
+    <h2>Signup</h2>
+    <form action="#">
+      <div class="input-box">
+        <i class='bx bxs-user'></i>
+        <input type="text" required>
+        <label>Username</label>
+      </div>
+      <div class="input-box">
+        <i class='bx bxs-envelope'></i>
+        <input type="email" required>
+        <label>Email</label>
+      </div>
+      <div class="input-box">
+        <i class='bx bxs-lock-alt'></i>
+        <input type="password" required>
+        <label>Password</label>
+      </div>
+      <button type="submit" class="btn">Signup</button>
+      <div class="register-link">
+        <p>Already have an account? <a href="#" id="login-link">Login</a></p>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script>
+  const loginLink = document.getElementById('login-link');
+  const signupLink = document.getElementById('signup-link');
+  const formContainer = document.querySelector('.form-container');
+
+  signupLink.addEventListener('click', () => {
+    formContainer.classList.add('active');
+  });
+
+  loginLink.addEventListener('click', () => {
+    formContainer.classList.remove('active');
+  });
+</script>
+
+</body>
+</html>
