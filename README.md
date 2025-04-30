@@ -1,5 +1,6 @@
 # UNIbuzz
-# 🎉 Event Management Website
+ the buzz in the university.
+# 🎉 college Event Management Website
 
 A responsive and interactive website designed to manage and showcase events. Built with **HTML**, **CSS**, and **JavaScript**, this project serves as a front-end template for event planners, organizations, or venues to display upcoming events, allow users to register, and share details.
 
